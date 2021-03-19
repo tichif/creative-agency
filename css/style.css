@@ -34,6 +34,7 @@ section {
   padding: 100px;
 }
 
+/* basic style */
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -57,6 +58,7 @@ section {
   z-index: 20;
 }
 
+/* Toggle */
 .toggle {
   border: none;
   position: fixed;
@@ -79,6 +81,7 @@ section {
   background-position: center;
 }
 
+/* navigation */
 .navigation {
   position: fixed;
   top: 0;
@@ -139,6 +142,7 @@ section {
   transform: scale(0.5);
 }
 
+/* Home page */
 .home-image {
   position: absolute;
   bottom: 0;
@@ -150,4 +154,24 @@ section {
   z-index: 10;
   max-width: 600px;
   position: relative;
+}
+/* Media query */
+@media (max-width: 1068px) {
+  .home-image {
+    display: none;
+  }
+
+  .logo {
+    top: 10px;
+    left: 40px;
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 100px 40px;
+  }
+
+  .navigation ul li a {
+    font-size: 2rem;
+  }
 }
